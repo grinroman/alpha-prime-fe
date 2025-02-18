@@ -1,3 +1,5 @@
+import { BarcodeLogo } from "@/components/atoms/BarcodeLogo";
+
 export default function PanelOfStatePage() {
-  return <p>panel of the state</p>;
+  return <BarcodeLogo />;
 }
