@@ -12,7 +12,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        inter: ["var(--font-inter)", ...fontFamily.sans],
       },
       colors: {
         background: "hsl(var(--background))",

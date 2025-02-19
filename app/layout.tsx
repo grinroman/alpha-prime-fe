@@ -1,11 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap", // Ensures the fallback font is used until Inter is loaded
-});
+const interFont = Inter({ subsets: ["latin"], weight: "400", variable: "--font-inter" });
 
 export default function RootLayout({
   children,
@@ -14,7 +10,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>{children}</body>
+      <body className={`${interFont.variable} antialiased`}>{children}</body>
     </html>
   );
 }

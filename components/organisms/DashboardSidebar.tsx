@@ -1,7 +1,5 @@
 "use client";
 
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { LayoutDashboard, LogOut, Settings, UserCog } from "lucide-react";
 import { useState } from "react";
 import { Sidebar, SidebarBody, SidebarLink } from "@/components/ui/sidebar";
@@ -10,7 +8,6 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 import Image from "next/image";
-
 
 export default function DashboardSidebar({
   children,
