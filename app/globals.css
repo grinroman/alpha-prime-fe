@@ -4,6 +4,8 @@
 
 @layer base {
   :root {
+    --radius: 0.5rem;
+
     --background: 0 0% 100%;
 
     --text-black-1: 0 0% 0%;
@@ -44,4 +46,13 @@ body {
 
 #__next {
   @apply h-full w-full flex flex-col;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
