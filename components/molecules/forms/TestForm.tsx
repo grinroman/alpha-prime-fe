@@ -49,14 +49,18 @@ export default function TestForm() {
             name="username"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Username</FormLabel>
+                <FormLabel className="text-foreground">Username</FormLabel>
                 <FormControl>
-                  <Input placeholder="Enter username" {...field} />
+                  <Input
+                    placeholder="Enter username"
+                    {...field}
+                    className="text-foreground placeholder:text-muted-foreground"
+                  />
                 </FormControl>
-                <FormDescription>
+                <FormDescription className="text-muted-foreground">
                   This is your public display name.
                 </FormDescription>
-                <FormMessage />
+                <FormMessage className="text-destructive" />
               </FormItem>
             )}
           />
@@ -67,9 +71,9 @@ export default function TestForm() {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Email</FormLabel>
+                <FormLabel className="text-foreground">Email</FormLabel>
                 <FormControl>
-                  <div className="relative min-w-[300px] rounded-lg border border-input bg-background shadow-sm shadow-black/5 transition-shadow focus-within:border-ring focus-within:outline-none focus-within:ring-[3px] focus-within:ring-ring/20 has-[:disabled]:cursor-not-allowed has-[:disabled]:opacity-50 [&:has(input:is(:disabled))_*]:pointer-events-none">
+                  <div className="relative min-w-[300px] rounded-lg border border-input bg-background shadow-sm shadow-black/5 transition-shadow focus-within:border-primary focus-within:outline-none focus-within:ring-[3px] focus-within:ring-primary/20 has-[:disabled]:cursor-not-allowed has-[:disabled]:opacity-50 [&:has(input:is(:disabled))_*]:pointer-events-none">
                     <label
                       htmlFor={field.name}
                       className="block px-3 pt-2 text-xs font-medium text-foreground"
@@ -83,10 +87,10 @@ export default function TestForm() {
                     />
                   </div>
                 </FormControl>
-                <FormDescription>
+                <FormDescription className="text-muted-foreground">
                   We&apos;ll never share your email.
                 </FormDescription>
-                <FormMessage />
+                <FormMessage className="text-destructive" />
               </FormItem>
             )}
           />
@@ -97,13 +101,13 @@ export default function TestForm() {
             name="search"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Search</FormLabel>
+                <FormLabel className="text-foreground">Search</FormLabel>
                 <FormControl>
                   <div className="relative flex items-center w-full">
                     <Input
                       {...field}
                       placeholder="Search..."
-                      className="pr-12"
+                      className="pr-12 text-foreground placeholder:text-muted-foreground"
                     />
                     <div className="absolute right-1 flex items-center justify-center">
                       <Button
@@ -112,12 +116,12 @@ export default function TestForm() {
                         variant="ghost"
                         className="h-7 w-7 p-0"
                       >
-                        <Search className="h-4 w-4" />
+                        <Search className="h-4 w-4 text-muted-foreground" />
                       </Button>
                     </div>
                   </div>
                 </FormControl>
-                <FormMessage />
+                <FormMessage className="text-destructive" />
               </FormItem>
             )}
           />
@@ -128,16 +132,16 @@ export default function TestForm() {
             name="newsletter"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Newsletter</FormLabel>
+                <FormLabel className="text-foreground">Newsletter</FormLabel>
                 <FormControl>
                   <div className="relative flex overflow-hidden rounded-lg border border-input shadow-sm shadow-black/5">
-                    <div className="flex items-center justify-center px-3 border-r border-input bg-muted/20">
+                    <div className="flex items-center justify-center px-3 border-r border-input bg-secondary/20">
                       <Mail className="h-4 w-4 text-muted-foreground" />
                     </div>
                     <Input
                       {...field}
                       placeholder="Subscribe to newsletter"
-                      className="border-0 shadow-none rounded-none focus-visible:ring-0 focus-visible:border-0 pr-12"
+                      className="border-0 shadow-none rounded-none focus-visible:ring-0 focus-visible:border-0 pr-12 text-foreground placeholder:text-muted-foreground"
                     />
                     <div className="absolute right-1 flex items-center justify-center">
                       <Button
@@ -146,20 +150,22 @@ export default function TestForm() {
                         variant="ghost"
                         className="h-7 w-7 p-0"
                       >
-                        <ArrowRight className="h-4 w-4" />
+                        <ArrowRight className="h-4 w-4 text-muted-foreground" />
                       </Button>
                     </div>
                   </div>
                 </FormControl>
-                <FormDescription>
+                <FormDescription className="text-muted-foreground">
                   Subscribe to our newsletter for updates.
                 </FormDescription>
-                <FormMessage />
+                <FormMessage className="text-destructive" />
               </FormItem>
             )}
           />
 
-          <Button type="submit">Submit</Button>
+          <Button type="submit" className="w-full">
+            Submit
+          </Button>
         </form>
       </Form>
     </div>
