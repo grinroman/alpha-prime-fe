@@ -1,14 +1,10 @@
-import { useId } from "react"
-
 import { Checkbox } from "@/components/ui/checkbox"
 import { Input } from "@/components/ui/input"
 import { Typography } from "@/components/ui/typography"
 import { BarcodeLogo } from "@/components/atoms/BarcodeLogo"
-import TestForm from "@/components/moleculas/forms/TestForm"
+import TestForm from "@/components/molecules/forms/TestForm"
 
 export default function PanelOfStatePage() {
-  const id = useId()
-
   return (
     <>
       <TestForm />
@@ -64,7 +60,7 @@ export default function PanelOfStatePage() {
         </Typography>
 
         <Typography variant="inline-code" as="pre">
-          console.log("This is code styled text but rendered as a pre element");
+          This is code styled text but rendered as a pre element
         </Typography>
 
         {/* Example of overriding the default element */}

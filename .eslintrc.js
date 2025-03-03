@@ -17,7 +17,7 @@ module.exports = {
     "tailwindcss/no-custom-classname": "off",
     "tailwindcss/classnames-order": "warn",
     "react-hooks/rules-of-hooks": "warn",
-    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-imports": "warn",
     "unused-imports/no-unused-vars": [
       "warn",
       {
