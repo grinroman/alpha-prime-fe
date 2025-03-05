@@ -1,7 +1,7 @@
 "use client"
 
 import { zodResolver } from "@hookform/resolvers/zod"
-import { ArrowRight, Mail, Search } from "lucide-react"
+import { Search } from "lucide-react"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 
@@ -132,16 +132,12 @@ export default function TestForm() {
             name="newsletter"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-foreground">Newsletter</FormLabel>
+                <FormLabel className="text-foreground">Search</FormLabel>
                 <FormControl>
-                  <div className="relative flex overflow-hidden rounded-lg border border-input shadow-sm shadow-black/5">
-                    <div className="flex items-center justify-center px-3 border-r border-input bg-secondary/20">
-                      <Mail className="h-4 w-4 text-muted-foreground" />
-                    </div>
+                  <div className="relative flex items-center w-full">
                     <Input
                       {...field}
-                      placeholder="Subscribe to newsletter"
-                      className="border-0 shadow-none rounded-none focus-visible:ring-0 focus-visible:border-0 pr-12 text-foreground placeholder:text-muted-foreground"
+                      className="pr-12 text-foreground placeholder:text-muted-foreground"
                     />
                     <div className="absolute right-1 flex items-center justify-center">
                       <Button
@@ -150,14 +146,11 @@ export default function TestForm() {
                         variant="ghost"
                         className="h-7 w-7 p-0"
                       >
-                        <ArrowRight className="h-4 w-4 text-muted-foreground" />
+                        <Search className="h-4 w-4 text-muted-foreground" />
                       </Button>
                     </div>
                   </div>
                 </FormControl>
-                <FormDescription className="text-muted-foreground">
-                  Subscribe to our newsletter for updates.
-                </FormDescription>
                 <FormMessage className="text-destructive" />
               </FormItem>
             )}

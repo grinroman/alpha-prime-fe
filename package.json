@@ -10,6 +10,17 @@
     "write": "prettier . --write",
     "prepare": "husky install"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
   "dependencies": {
     "@hookform/resolvers": "^4.1.2",
     "@radix-ui/react-checkbox": "^1.1.4",

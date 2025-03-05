@@ -37,7 +37,7 @@ export const passwordSchema = z
     message: "Password must contain at least one number",
   })
   .refine((password) => /[!@#$%^&*]/.test(password), {
-    message: "Password must contain at least one special character",
+    message: "Password must contain at least one special character", //absolute right-1 flex items-center justify-center
   })
 
 const formSchema = z.object({
