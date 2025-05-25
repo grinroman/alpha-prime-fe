@@ -1,16 +1,30 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Inter } from "next/font/google"
+import { NextIntlClientProvider } from "next-intl"
+import { getLocale, getMessages } from "next-intl/server"
 
-const interFont = Inter({ subsets: ["latin"], weight: "400", variable: "--font-inter" });
+import "./globals.css"
 
-export default function RootLayout({
+const interFont = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-inter",
+})
+
+export default async function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
+  const locale = await getLocale()
+  const messages = await getMessages()
+
   return (
-    <html lang="en">
-      <body className={`${interFont.variable} antialiased`}>{children}</body>
+    <html lang={locale}>
+      <body className={`${interFont.variable} antialiased`}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {children}
+        </NextIntlClientProvider>
+      </body>
     </html>
-  );
+  )
 }

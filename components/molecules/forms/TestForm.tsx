@@ -49,12 +49,12 @@ export default function TestForm() {
             name="username"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-foreground">Username</FormLabel>
+                <FormLabel className="text-text-black-1">Username</FormLabel>
                 <FormControl>
                   <Input
                     placeholder="Enter username"
                     {...field}
-                    className="text-foreground placeholder:text-muted-foreground"
+                    className="text-text-black-1 placeholder:text-muted-foreground"
                   />
                 </FormControl>
                 <FormDescription className="text-muted-foreground">
@@ -71,18 +71,18 @@ export default function TestForm() {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-foreground">Email</FormLabel>
+                <FormLabel className="text-text-black-1">Email</FormLabel>
                 <FormControl>
                   <div className="relative min-w-[300px] rounded-lg border border-input bg-background shadow-sm shadow-black/5 transition-shadow focus-within:border-primary focus-within:outline-none focus-within:ring-[3px] focus-within:ring-primary/20 has-[:disabled]:cursor-not-allowed has-[:disabled]:opacity-50 [&:has(input:is(:disabled))_*]:pointer-events-none">
                     <label
                       htmlFor={field.name}
-                      className="block px-3 pt-2 text-xs font-medium text-foreground"
+                      className="block px-3 pt-2 text-xs font-medium text-text-black-1"
                     >
                       Inset Label
                     </label>
                     <Input
                       {...field}
-                      className="bg-transparent border-none focus-visible:ring-0 focus-visible:border-0 px-3 pb-2 text-sm text-foreground placeholder:text-muted-foreground/70 focus-visible:outline-none"
+                      className="bg-transparent border-none focus-visible:ring-0 focus-visible:border-0 px-3 pb-2 text-sm text-text-black-1 placeholder:text-muted-foreground/70 focus-visible:outline-none"
                       placeholder="Enter your email"
                     />
                   </div>
@@ -101,13 +101,13 @@ export default function TestForm() {
             name="search"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-foreground">Search</FormLabel>
+                <FormLabel className="text-text-black-1">Search</FormLabel>
                 <FormControl>
                   <div className="relative flex items-center w-full">
                     <Input
                       {...field}
                       placeholder="Search..."
-                      className="pr-12 text-foreground placeholder:text-muted-foreground"
+                      className="pr-12 text-text-black-1 placeholder:text-muted-foreground"
                     />
                     <div className="absolute right-1 flex items-center justify-center">
                       <Button
@@ -132,12 +132,12 @@ export default function TestForm() {
             name="newsletter"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-foreground">Search</FormLabel>
+                <FormLabel className="text-text-black-1">Search</FormLabel>
                 <FormControl>
                   <div className="relative flex items-center w-full">
                     <Input
                       {...field}
-                      className="pr-12 text-foreground placeholder:text-muted-foreground"
+                      className="pr-12 text-text-black-1 placeholder:text-muted-foreground"
                     />
                     <div className="absolute right-1 flex items-center justify-center">
                       <Button

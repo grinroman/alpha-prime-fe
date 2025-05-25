@@ -1,0 +1,66 @@
+{
+  "Calendar": {
+    "months": [
+      "Січень",
+      "Лютий",
+      "Березень",
+      "Квітень",
+      "Травень",
+      "Червень",
+      "Липень",
+      "Серпень",
+      "Вересень",
+      "Жовтень",
+      "Листопад",
+      "Грудень"
+    ],
+    "monthsShort": [
+      "Січ",
+      "Лют",
+      "Бер",
+      "Квіт",
+      "Трав",
+      "Черв",
+      "Лип",
+      "Серп",
+      "Вер",
+      "Жовт",
+      "Лист",
+      "Груд"
+    ],
+    "weekdays": [
+      "Неділя",
+      "Понеділок",
+      "Вівторок",
+      "Середа",
+      "Четвер",
+      "П'ятниця",
+      "Субота"
+    ],
+    "weekdaysShort": ["Нд", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+    "today": "Сьогодні",
+    "choose_date": "Оберіть дату"
+  },
+  "SignUp": {
+    "title": "Реєстрація",
+    "firstName": "Ім'я",
+    "firstNamePlaceholder": "Введіть ім'я",
+    "lastName": "Прізвище",
+    "lastNamePlaceholder": "Введіть прізвище",
+    "phoneNumber": "Номер телефону",
+    "phoneNumberPlaceholder": "(0XX) XXX XX XX",
+    "email": "Email",
+    "emailPlaceholder": "Введіть email",
+    "password": "Пароль",
+    "passwordPlaceholder": "Введіть пароль",
+    "confirmPassword": "Підтвердження пароля",
+    "confirmPasswordPlaceholder": "Підтвердіть пароль",
+    "dateOfBirth": "Дата народження",
+    "chooseDateOfBirth": "Оберіть дату",
+    "gender": "Стать",
+    "chooseSex": "Оберіть стать",
+    "male": "Чоловіча",
+    "female": "Жіноча",
+    "submit": "Зареєструватися"
+  }
+}

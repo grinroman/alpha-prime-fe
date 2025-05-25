@@ -19,23 +19,23 @@ export default function DashboardSidebar({
       label: "Dashboard",
       href: "#",
       icon: (
-        <LayoutDashboard className="text-foreground h-5 w-5 flex-shrink-0" />
+        <LayoutDashboard className="text-text-black-1 h-5 w-5 flex-shrink-0" />
       ),
     },
     {
       label: "Profile",
       href: "#",
-      icon: <UserCog className="text-foreground h-5 w-5 flex-shrink-0" />,
+      icon: <UserCog className="text-text-black-1 h-5 w-5 flex-shrink-0" />,
     },
     {
       label: "Settings",
       href: "#",
-      icon: <Settings className="text-foreground h-5 w-5 flex-shrink-0" />,
+      icon: <Settings className="text-text-black-1 h-5 w-5 flex-shrink-0" />,
     },
     {
       label: "Logout",
       href: "#",
-      icon: <LogOut className="text-foreground h-5 w-5 flex-shrink-0" />,
+      icon: <LogOut className="text-text-black-1 h-5 w-5 flex-shrink-0" />,
     },
   ]
   const [open, setOpen] = useState(false)
@@ -84,13 +84,13 @@ export const Logo = () => {
   return (
     <Link
       href="#"
-      className="font-normal flex space-x-2 items-center text-sm text-foreground py-1 relative z-20"
+      className="font-normal flex space-x-2 items-center text-sm text-text-black-1 py-1 relative z-20"
     >
       <div className="h-5 w-6 bg-foreground dark:bg-background rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm flex-shrink-0" />
       <motion.span
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="font-medium text-foreground whitespace-pre"
+        className="font-medium text-text-black-1 whitespace-pre"
       >
         Acet Labs
       </motion.span>
@@ -102,7 +102,7 @@ export const LogoIcon = () => {
   return (
     <Link
       href="#"
-      className="font-normal flex space-x-2 items-center text-sm text-foreground py-1 relative z-20"
+      className="font-normal flex space-x-2 items-center text-sm text-text-black-1 py-1 relative z-20"
     >
       <div className="h-5 w-6 bg-foreground dark:bg-background rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm flex-shrink-0" />
     </Link>
@@ -124,7 +124,7 @@ const Dashboard = ({
           {[...new Array(4)].map((i) => (
             <div
               key={"first-array" + i}
-              className="h-20 w-full rounded-lg  bg-gray-100 dark:bg-neutral-800 animate-pulse"
+              className="h-20 w-full rounded-lg  bg-grey-100 dark:bg-neutral-800 animate-pulse"
             ></div>
           ))}
         </div>
@@ -132,7 +132,7 @@ const Dashboard = ({
           {[...new Array(2)].map((i) => (
             <div
               key={"second-array" + i}
-              className="h-full w-full rounded-lg  bg-gray-100 dark:bg-neutral-800 animate-pulse"
+              className="h-full w-full rounded-lg  bg-grey-100 dark:bg-neutral-800 animate-pulse"
             ></div>
           ))}
         </div> */}

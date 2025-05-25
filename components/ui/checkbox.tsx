@@ -1,17 +1,12 @@
-"use client";
+"use client"
 
-import * as React from "react";
-import * as CheckboxPrimitive from "@radix-ui/react-checkbox";
-import { Check } from "lucide-react";
+import * as React from "react"
+import * as CheckboxPrimitive from "@radix-ui/react-checkbox"
+import { Check } from "lucide-react"
 
+import { cn } from "@/lib/utils"
 
-
-import { cn } from "@/lib/utils";
-
-
-
-import { Typography, type TypographyProps } from "./typography";
-
+import { Typography, type TypographyProps } from "./typography"
 
 const Checkbox = React.forwardRef<
   React.ComponentRef<typeof CheckboxPrimitive.Root>,
@@ -52,7 +47,7 @@ const CheckboxWithLabel = React.forwardRef<
   React.ComponentRef<typeof CheckboxPrimitive.Root>,
   CheckboxWithLabelProps
 >(
-  ( 
+  (
     { label, typographyProps, containerClassName, id, className, ...props },
     ref
   ) => {
@@ -64,7 +59,7 @@ const CheckboxWithLabel = React.forwardRef<
         <Checkbox ref={ref} id={checkboxId} className={className} {...props} />
         <Typography
           as="label"
-          variant="small"
+          variant="p"
           className={cn(
             "font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
             typographyProps?.className
